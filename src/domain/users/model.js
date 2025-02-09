@@ -8,7 +8,7 @@ module.exports = {
       id: String(Date.now()),
     };
 
-    if (!users.find((user) => user.username === users)) {
+    if (!users.find(user => user.username === users)) {
       users.push(newUser);
     } else {
       throw new Error("Пользователь уже существует");
